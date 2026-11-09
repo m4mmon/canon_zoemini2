@@ -107,6 +107,10 @@ General options: `-v/--verbose` shows the exchanged frames; `--channel` sets the
 zoemini print photo.jpg --dry-run --preview preview.png    # check the framing without printing
 ```
 
+![Test pattern printed on my Zoemini 2](test-pattern_zoemini2.jpg)
+*Test pattern printed with `zoemini test-pattern`.*
+
+
 ### 1.4 Behaviour
 
 - Before printing, `zoemini` checks the printer's state and refuses to print if the cover is open, the paper is missing or wrong, or the printer is busy. If the blue calibration sheet is being fed (new paper pack), it waits for the end of the calibration.
