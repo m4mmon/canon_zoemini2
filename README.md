@@ -14,7 +14,15 @@ This project started from [**ivy2**](https://github.com/dtgreene/ivy2) by dtgree
 
 Not affiliated with or endorsed by Canon. "Canon", "Zoemini", "Ivy" and "iNSPiC" are trademarks of their owners.
 
-**Requirements**: Linux with BlueZ, a Bluetooth adapter, Python ≥ 3.11 and Pillow. The emulator also needs `dbus-fast`. Tested on Raspberry Pi Zero 2 W and Raspberry Pi 4 (Raspberry Pi OS Lite 64-bit, Debian 13, BlueZ 5.82, Python 3.13).
+**Requirements**: Linux with BlueZ, a Bluetooth adapter, Python ≥ 3.11 and Pillow. The emulator also needs `dbus-fast`.
+
+Tested, printing and emulator, with the procedure below and no changes:
+
+| Machine | Bluetooth adapter | OS | Architecture | BlueZ | Python |
+|---|---|---|---|---|---|
+| Raspberry Pi Zero 2 W | built-in | Raspberry Pi OS Lite 64-bit (Debian 13) | aarch64 | 5.82 | 3.13.5 |
+| Raspberry Pi 4 | built-in | Raspberry Pi OS Lite 64-bit (Debian 13) | aarch64 | 5.82 | 3.13.5 |
+| PC | Intel BE200 (USB `8087:0036`) | Debian GNU/Linux 13 (trixie) | x86_64 | 5.82 | 3.13.5 |
 
 | File | Role |
 |---|---|
