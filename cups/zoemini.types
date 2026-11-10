@@ -1,0 +1,3 @@
+# MIME type produced by the zoemini CUPS filter: concatenated JPEGs in the
+# Zoemini 2 format, one per print. Install in /usr/share/cups/mime/.
+application/vnd.zoemini-jpeg

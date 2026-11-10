@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zoemini"
-version = "0.4.2"
+version = "0.4.6"
 description = "Printing on Canon Zoemini 2 / Ivy 2 over Bluetooth (RFCOMM), without the official app"
 readme = "README.md"
 license = "MIT"
@@ -17,6 +17,8 @@ emulator = ["dbus-fast>=2"]
 
 [project.scripts]
 zoemini = "zoemini.cli:main"
+zoemini-cups-backend = "zoemini.cups_backend:main"
+zoemini-cups-filter = "zoemini.cups_filter:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

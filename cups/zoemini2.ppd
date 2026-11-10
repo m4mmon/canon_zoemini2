@@ -1,0 +1,64 @@
+*PPD-Adobe: "4.3"
+*% Canon Zoemini 2 / Ivy 2 / iNSPiC PV-223 over Bluetooth,
+*% for the zoemini CUPS filter and backend.
+*FormatVersion: "4.3"
+*FileVersion: "0.4.6"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "ZOEMINI2.PPD"
+*Manufacturer: "Canon"
+*Product: "(Zoemini 2)"
+*ModelName: "Canon Zoemini 2"
+*ShortNickName: "Canon Zoemini 2"
+*NickName: "Canon Zoemini 2, zoemini 0.4.6"
+*1284DeviceID: "MFG:Canon;MDL:Zoemini 2;CMD:JPEG;"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: True
+*DefaultColorSpace: RGB
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 2.4
+*cupsManualCopies: True
+*cupsFilter2: "application/pdf application/vnd.zoemini-jpeg 10 zoemini"
+*cupsFilter2: "image/jpeg application/vnd.zoemini-jpeg 10 zoemini"
+*cupsFilter2: "image/png application/vnd.zoemini-jpeg 10 zoemini"
+*cupsFilter2: "image/tiff application/vnd.zoemini-jpeg 10 zoemini"
+*cupsFilter2: "image/gif application/vnd.zoemini-jpeg 10 zoemini"
+
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: 2x3.Fullbleed
+*PageSize 2x3.Fullbleed/2 x 3 in (ZINK): "<</PageSize[144 216]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: 2x3.Fullbleed
+*PageRegion 2x3.Fullbleed/2 x 3 in (ZINK): "<</PageSize[144 216]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: 2x3.Fullbleed
+*ImageableArea 2x3.Fullbleed/2 x 3 in (ZINK): "0 0 144 216"
+*DefaultPaperDimension: 2x3.Fullbleed
+*PaperDimension 2x3.Fullbleed/2 x 3 in (ZINK): "144 216"
+
+*OpenUI *ZoeminiScaling/Scaling: PickOne
+*OrderDependency: 20 AnySetup *ZoeminiScaling
+*DefaultZoeminiScaling: Fill
+*ZoeminiScaling Fill/Fill the print (crop): ""
+*ZoeminiScaling Fit/Whole image (white bands): ""
+*CloseUI: *ZoeminiScaling
+
+*OpenUI *ZoeminiEnhance/Image enhancement: PickOne
+*OrderDependency: 20 AnySetup *ZoeminiEnhance
+*DefaultZoeminiEnhance: On
+*ZoeminiEnhance On/On (tone curve and sharpening): ""
+*ZoeminiEnhance Off/Off (raw): ""
+*CloseUI: *ZoeminiEnhance
+
+*DefaultFont: Courier
+*Font Courier: Standard "(002.004S)" Standard ROM
+*% End of zoemini2.ppd
